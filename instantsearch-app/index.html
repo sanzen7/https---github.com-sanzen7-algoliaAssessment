@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="shortcut icon" href="./favicon.png">
+
+  <!--
+    Do not use @8 in production, use a complete version like x.x.x, see website for latest version:
+    https://www.algolia.com/doc/guides/building-search-ui/installation/js/#load-the-styles
+  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8/themes/satellite-min.css">
+  <link rel="stylesheet" href="./src/index.css">
+  <link rel="stylesheet" href="./src/app.css">
+
+  <title>instantsearch-app</title>
+</head>
+
+<body>
+  <header class="header">
+    <div id="autocomplete"></div>
+  </header>
+
+  <div style="display: flex" container>
+    <div style="float: left" container>
+      <div class="search-panel">
+        <div class="search-panel__filters">
+            <div id="clear-refinements"></div>
+            <span>
+              <h5>Brand</h5>
+            </span>
+          <div id="refinement-list"></div>
+        </div>
+        <span>
+          <h5>Category</h5>
+        </span>
+        <div class = "search-panel__filters">
+          <div id="hierarchical-menu"></div>
+        </div>
+      </div>
+    </div>
+  
+    <div style="float: right;"container>
+      <div class="search-panel__results">
+        <div id="sortby"></div>
+        <div id="searchbox"></div>
+        <div id="current-refinements"></div>
+        <div id="hits"></div>
+        <div id="pagination"></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.10.5/dist/algoliasearch-lite.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.75.5"></script>
+  <script src="./src/app.js"></script>
+</body>
+
+</html>
