@@ -1,0 +1,96 @@
+.header {
+  display: center;
+  align-items: center;
+  min-height: 350px;
+  padding: 0.5rem 1rem;
+  background-image: url("./images/W20_11_022-banner-1860.jpg");
+  color: #fff;
+  margin-bottom: -3rem;
+  background-repeat: no-repeat;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-title {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.header-title::after {
+  content: ' ▸ ';
+  padding: 0 0.5rem;
+}
+
+.header-subtitle {
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.search-panel {
+  display: inline-block;
+}
+
+.search-panel__filters {
+  flex: 1;
+  display: inline-block
+}
+
+.search-panel__results {
+  flex: 3;
+}
+
+.ais-Highlight-highlighted {
+  color: inherit;
+  font-size: inherit;
+}
+
+#searchbox {
+  margin-bottom: 2rem;
+}
+
+#pagination {
+  margin: 2rem auto;
+  text-align: center;
+}
+#clear-refinements {
+  margin-top: 1rem;
+}
+
+#sortby {
+  width: 230px; 
+  height: 60px;
+  float: inline-end;
+  margin-top: -15px;
+}
+
+.ais-Hits-item article {
+  display: flex;
+}
+
+.ais-Hits-item img {
+  width: 80px;
+  height: 60px;
+  float: left;
+  object-fit: cover;
+}
+
+body { font-family: sans-serif; padding: 1em; }
+.ais-SearchBox { margin: 1em 0; }
+.ais-Pagination { margin-top: 1em; }
+.left-panel { float: left; margin-top: 1em; width: 250px; }
+.right-panel { margin-left: 260px; }
+.ais-InstantSearch { max-width: 960px; margin: 0 auto; }
+.ais-Hits-list { display: inline; grid-template-columns: repeat(2, 1fr); grid-gap: 1em; }
+.ais-Hits-item { box-shadow: 0 0 0 0px rgba(0, 0, 0, 1), 0 0px 1px 0 rgba(0, 0, 0, 1); }
+.ais-Hits-item img { margin-right: 1em;  }
+.hit-name { margin-bottom: 0.5em; }
+.hit-description { color: #888; font-size: 14px; margin-bottom: 0.5em; }
+
